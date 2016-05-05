@@ -2,8 +2,6 @@ file_name = raw_input('What is the name of your file? ')
 file_handler = open(file_name,'r')
 
 counts= {}
-bigword = None
-bigcount = None
 
 for line in file_handler:
     if not line.startswith('From '): continue
@@ -11,6 +9,9 @@ for line in file_handler:
     words = words[1]
     counts[words] = counts.get(words,0) + 1
 
+
+bigword = None
+bigcount = None
 for word, count in counts.items():
     if bigcount is None or count > bigcount:
         bigword = word
