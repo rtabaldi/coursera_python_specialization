@@ -13,3 +13,4 @@ for line in file_handler:
 
 lst.sort()
 print lst
+

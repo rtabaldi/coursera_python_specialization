@@ -1,4 +1,4 @@
-file_name = raw_input('what is the file name? ')
+	file_name = raw_input('what is the file name? ')
 
 file_handler = open(file_name,'r')
 

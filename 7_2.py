@@ -12,4 +12,4 @@ for word in file_handler:
 		word = float(word[word.find('0'):len(word)])
 		total = total + word
 
-print 'Average Spam Confidence',(total/count)
+print 'Average Spam Confidence: ',(total/count)

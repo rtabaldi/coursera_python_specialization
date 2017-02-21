@@ -1,7 +1,6 @@
 import urllib
 from BeautifulSoup import *
 
-
 url = raw_input('Enter url - ')
 html = urllib.urlopen(url).read()
 soup = BeautifulSoup(html)
